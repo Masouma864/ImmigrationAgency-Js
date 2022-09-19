@@ -1,0 +1,118 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  header{
+    background-image: url(images/background.jpg);
+    
+  }
+
+#mobile-menu{
+    display: none;
+}
+.menu{
+    width: 45px;
+    height: 45px;
+}
+
+.headline-section {
+    background-image: url(images/background.jpg);
+background-repeat: no-repeat;
+    background-size:cover;
+ background-position: center;
+    height: 100%;
+    z-index: 2;
+    margin-top: -28px;
+    padding: 20px;
+   
+
+}
+
+h1 {
+    color: red;
+    padding-top: 25px;
+    font-size: 30px;
+    font-weight:800px;
+    font-family: sans-serif;
+}
+h2{
+    color: red;
+    font-size: 33px;
+    font-weight: 800;
+    font-family: sans-serif;
+    padding-top: 0px;
+}
+
+#description{
+    border: 3px solid rgb(221, 221, 203);
+    padding-left: 15px;
+    padding-right: 10px;
+    align-items: center;
+
+}
+.intro h3{
+    font-size: 27px;
+    font-weight: 800;
+}
+.intro{
+    margin-bottom: 40px;
+}
+.main{
+    background-color: rgb(56, 44, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.main h1{
+  
+    text-align: center;
+    color: azure;
+}
+.main-div{
+    border: 0px solid rgb(121, 92, 92);
+    background-color: rgb(121, 92, 92);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.logo{
+    width: 60px;
+ align-items: left;
+ padding-right: 15px;
+}
+.lecturer{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+   
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    
+
+
+}
+.main-title{
+    font-size: 24px;
+    float:right;
+    color: rgb(185, 34, 34);
+}
+.main-desc p{
+    color:antiquewhite;
+}
+.main2{
+    border: 0px solid rgb(121, 92, 92);
+    background-color: rgb(121, 92, 92);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
