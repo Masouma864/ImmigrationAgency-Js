@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 body,
 html {
   height: 100%;
   margin: 0;
-
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
+
 * {
   box-sizing: border-box;
 }
+
 header {
   background-image: url(images/background.jpg);
   position: fixed;
@@ -26,47 +28,83 @@ header {
 #mobile-menu {
   display: none;
 }
+
 nav .menu {
   width: 45px;
   height: 45px;
   margin-left: 6px;
   cursor: pointer;
 }
+
 .nav-links {
-    display: none;
-  }
-  .nav-links ul li {
-    display: inline;
-    list-style-type: none;
-    padding: 10px;
-    text-align: center;
-    margin-right: 20px;
-  }
-  .bold{
-    padding-right: 30px;
-    border: 3px solid red;
-    padding:10px 10px 10px 20px;
-  }
-  .desk-logo{
-    display: none;
-    width: 180px;
-    height: 70px;
-    padding-left: 60px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: rgb(56, 47, 47);
-    font-size: 0.938rem;
-    font-weight: 600;
-  }
-  .nav-links a:hover {
-    color: #fff5e1;
-  }
-  
-  .nav-links a:active {
-    color: #ffc857;
-  }
+  display: none;
+}
+
+.nav-links ul li {
+  display: inline;
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.bold {
+  border: 3px solid red;
+  padding: 10px 10px 10px 20px;
+}
+
+.desk-logo {
+  display: none;
+  width: 180px;
+  height: 70px;
+  padding-left: 60px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(56, 47, 47);
+  font-size: 0.938rem;
+  font-weight: 600;
+}
+
+.partner-img h1 {
+  padding: 15px;
+}
+
+.partner-img a {
+  padding-left: 46px;
+}
+
+.partner1 a {
+  margin-left: 30px;
+  padding-bottom: 20px;
+}
+
+.partner a,
+.partner1 a {
+  padding: 5px 30px;
+  font-size: 24px;
+  color: rgb(204, 204, 195);
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+  text-decoration: none;
+}
+
+.programs a {
+  display: none;
+  color: rgb(141, 137, 137);
+  text-align: center;
+}
+
+.nav-links a:hover {
+  color: #fff5e1;
+}
+
+.nav-links a:active {
+  color: #ffc857;
+}
+
 .headline-section {
   background-image: url(images/background.jpg);
   background-repeat: no-repeat;
@@ -74,13 +112,13 @@ nav .menu {
   background-position: center;
   height: 100%;
   z-index: 2;
-  padding: 55px 0px;
+  padding: 55px 0;
   width: 100%;
 }
 
 .headline-section h2 {
   color: red;
-  padding: 10px 0 10px 0px;
+  padding: 10px 0 10px 0;
   font-size: 30px;
   margin-left: 30px;
   margin-bottom: 15px;
@@ -88,6 +126,7 @@ nav .menu {
   text-align: left;
   font-family: sans-serif;
 }
+
 .headline-section h1 {
   color: red;
   font-size: 20px;
@@ -101,42 +140,93 @@ nav .menu {
 #description,
 #about-description {
   border: 7px solid white;
-  margin: 15px 0px;
+  margin: 15px 0;
 }
+
+.logo-info h1 {
+  color: rgb(70, 56, 56);
+  font-size: 16px;
+  margin: 0 60px;
+  font-family: sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-info p {
+  font-size: 17px;
+  font-family: sans-serif;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-about p {
+  color: azure;
+  font-size: 14px;
+  text-align: left;
+  padding-right: 2px;
+  margin-right: 0;
+}
+
+.history p {
+  padding: 10px;
+}
+
+.email p {
+  color: rgb(119, 112, 112);
+  text-align: center;
+}
+
+.main-desc p {
+  color: antiquewhite;
+  text-align: left;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.descript p {
+  text-align: left;
+  margin: 0;
+}
+
+.intro p {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 #description p,
 #about-description p {
   font-size: 14px;
-  margin: 0px 2px;
+  margin: 0 2px;
   line-height: 24px;
   text-align: left;
   color: rgb(41, 38, 38);
 }
+
 .intro h3 {
   font-size: 24px;
   font-weight: 800;
   font-family: sans-serif;
   text-align: left;
   margin-left: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
-.intro p {
-  text-align: left;
-  margin-left: 0px;
-  margin-right: 0px;
-}
+
 .intro {
   margin-bottom: 40px;
 }
-.programs{
-    background-image: url(images/feature-image.jpg);
-    margin-top: -30px;
-    padding-bottom: 10px;
+
+.programs {
+  background-image: url(images/feature-image.jpg);
+  margin-top: -30px;
+  padding-bottom: 10px;
 }
+
 .main-program {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -145,10 +235,12 @@ nav .menu {
   padding: 15px;
   width: 100%;
 }
+
 .programs h1 {
   text-align: center;
   color: azure;
 }
+
 .main-div {
   display: flex;
   flex-direction: row;
@@ -156,14 +248,16 @@ nav .menu {
   margin-bottom: 20px;
   padding-left: 15px;
 }
+
 .main-sec {
-  border: 0px solid rgb(216, 79, 54);
+  border: 0 solid rgb(216, 79, 54);
   background-color: rgb(212, 50, 21);
   padding: 15px;
   display: flex;
   flex-direction: row;
   margin: 20px 40px;
 }
+
 .main-sec h1 {
   font-family: sans-serif;
   font-size: 16px;
@@ -175,40 +269,40 @@ nav .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   padding-bottom: 2px;
 }
-.all2 , .all3{
-    display: none;
+
+.all2,
+.all3 {
+  display: none;
 }
-.speakers h1 {
-  color: rgb(29, 20, 20);
-}
+
 .speaker {
   display: flex;
   flex-direction: row;
-
   margin-bottom: 20px;
-  padding: 15px 0px 0px 15px;
+  padding: 15px 0 0 15px;
 }
+
+.speakers h1 {
+  color: rgb(29, 20, 20);
+  text-align: center;
+  font-size: 30px;
+}
+
 .lecturer {
   display: flex;
   flex-direction: row;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   align-items: center;
   -ms-flex-align: center;
   -webkit-box-align: center;
 }
+
 .descript h4 {
   font-size: 20px;
   columns: black;
-  margin: 0px;
+  margin: 0;
   margin-left: 14px;
-}
-.descript p {
-  text-align: left;
-  margin: 0px;
 }
 
 .main-title {
@@ -216,23 +310,15 @@ nav .menu {
   float: right;
   color: rgb(185, 34, 34);
 }
-.main-desc p {
-  color: antiquewhite;
-  text-align: left;
 
-  font-size: 14px;
-  font-family: sans-serif;
-}
-.programs a {
-    display: none;
-}
 .first {
   color: red;
-  padding-top: 0px;
+  padding-top: 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
 .second {
-  padding-top: 0px;
+  padding-top: 0;
   font-size: 15px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -241,27 +327,30 @@ nav .menu {
   width: 150px;
   height: 150px;
 }
-.speakers h1 {
-  text-align: center;
-  font-size: 30px;
-}
+
 .logo {
   width: 60px;
   align-items: left;
   padding-right: 15px;
 }
-.partner1{
-    display: none;
+
+.partner1 {
+  display: none;
 }
-.footer{
-    display: none;
+
+.footer {
+  display: none;
 }
+.fo{
+  display: none;
+}
+
 .more {
   border: 1px solid gray;
   margin: 10px;
-
   height: 50px;
 }
+
 .more h1 {
   font-size: 14px;
   color: rgb(44, 40, 40);
@@ -284,52 +373,41 @@ nav .menu {
   padding: 50px;
   width: 100%;
 }
-.headline-about h1,
-h2 {
-  text-align: center;
-  color: red;
-}
-.headline-about h2 {
-  color: red;
-  padding: 10px 0 10px 0px;
-  font-size: 32px;
-  margin-left: 30px;
 
-  margin-bottom: 15px;
-  font-weight: 800;
-  text-align: center;
-  font-family: sans-serif;
-}
 .headline-about h1 {
   color: red;
   font-size: 20px;
-
-  margin-left: 0px;
+  margin-left: 0;
   line-height: 50px;
   text-align: center;
   font-family: "Franklin Gothic Medium", sans-serif;
   margin-bottom: 5px;
 }
+
+.headline-about h2 {
+  color: red;
+  padding: 10px 0 10px 0;
+  font-size: 32px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  text-align: center;
+  font-family: sans-serif;
+}
+
 #about-description {
   background-color: white;
 }
-.email p {
-  color: rgb(119, 112, 112);
-  text-align: center;
-}
+
 .email h2 {
   color: rgb(53, 47, 47);
   font-size: 16px;
 }
-.logo-info h1,
-p {
-  color: rgb(70, 56, 56);
-  font-size: 16px;
-  margin: 0px 60px;
+
+.hide {
+  display: none;
 }
-.hide{
-    display: none;
-}
+
 .logo-info {
   display: flex;
   flex-direction: column;
@@ -337,64 +415,53 @@ p {
   border-bottom: 2px solid gray;
   padding-bottom: 30px;
 }
+
 .logo-img {
-  margin: 10px 0px 10px 50px;
+  margin: 10px 0 10px 50px;
   border: 1px solid gray;
   padding: 10px;
   width: 80%;
   height: 200px;
 }
-.logo-info h1,
-p {
-  font-size: 17px;
-  font-family: sans-serif;
-  color: black;
-  text-align: center;
-  padding: 20px;
+
+.p2 {
+  display: none;
 }
-.p2{
-    display: none;
-}
+
 .history {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.history-img{
-    display: flex;
-    flex-direction: column;
+
+.history-img {
+  display: flex;
+  flex-direction: column;
 }
+
 .history-img img {
   width: 100%;
   padding: 5% 10%;
   align-items: center;
 }
+
 .history h1 {
   color: black;
   text-align: center;
   font-size: 19px;
   font-family: sans-serif;
 }
-.history p {
-  padding: 10px;
-}
-.partner , .partner1 {
+
+.partner,
+.partner1 {
   background-color: rgb(82, 78, 78);
   height: 240px;
 }
-.partner h1 , .partner1 h1 {
+
+.partner h1,
+.partner1 h1 {
   text-align: center;
   color: rgb(128, 132, 134);
-}
-.partner a , .partner1 a {
-  padding: 5px 30px;
-  font-size: 24px;
-  color: rgb(204, 204, 195);
-  text-align: center;
-  font-weight: bold;
-  align-items: center;
-
-  text-decoration: none;
 }
 
 .footer-about img {
@@ -402,51 +469,46 @@ p {
   height: 80px;
   padding-left: 20px;
 }
+
 .footer-about h1 {
   font-size: 15px;
   color: black;
 }
+
 .footer-sec {
   display: flex;
   flex-direction: row;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   align-items: center;
   -ms-flex-align: center;
   -webkit-box-align: center;
 }
+
 .footer-about {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0px 10px;
+  margin: 0 10px;
+  background-color: rgb(63, 56, 56);
+  padding-top: 30px;
+  padding-left: 170px;
+  height: 200px;
 }
-.footer-about p {
-  font-size: 14px;
-  text-align: left;
-  padding-right: 2px;
-  margin-right: 0px;
-}
+
 .footer-info {
   font-size: 13px;
   font-weight: bold;
 }
-.partner-img h1{
-    padding: 15px;
-}
-.partner-img a{
-    padding-left: 46px;
-}
+
 @media screen and (min-width: 760px) {
-
-.menu{
+  .menu {
     display: none;
-}
+  }
 
-#mobile-menu{
+  #mobile-menu {
     display: block;
-}
-nav {
+  }
+
+  nav {
     background-color: white;
     position: fixed;
     top: 0;
@@ -454,199 +516,206 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     box-sizing: border-box;
     z-index: 1;
-    margin-left: 0px;
-    height: 50px;
+    margin-left: 0;
+    height: 70px;
   }
- 
+
   .nav-links {
     display: flex;
     justify-content: space-between;
     padding: 2px;
   }
-  .desk-logo{
+
+  .desk-logo {
     display: block;
-    
-  }
-  nav{
-    height: 70px;
   }
 
-.headline-section{
+  .headline-section {
     padding: 120px 120px 60px 90px;
-   
-}
-.headline-section h1{
+  }
+
+  .headline-section h1 {
     font-size: 40px;
     font-weight: 100;
-}
-.headline-section h2{
+  }
+
+  .headline-section h2 {
     font-weight: 800;
     font-size: 70px;
-}
-#description
-{
-  width: 70%;
-}
-.main-program{
+  }
+
+  #description {
+    width: 70%;
+  }
+
+  .main-program {
     display: flex;
     flex-direction: row;
     padding: 30px;
     width: 100%;
-}
-.main-div{
+  }
+
+  .main-div {
     flex-direction: column;
     margin-right: 5px;
-    padding-right: 0px;
-
+    padding-right: 0;
     height: 14%;
-}
-.lecturer{
-    flex-direction: column;
-}
-.main-desc p{
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-}
-.main-sec{
-    display: none;
-}
-.programs a{
-    display: block;
-    color: rgb(141, 137, 137);
-   
-    text-align: center;
-}
-.programs{
-    padding: 70px;
-}
-.programs h1{
+  }
 
+  .lecturer {
+    flex-direction: column;
+  }
+
+  .main-desc p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-sec {
+    display: none;
+  }
+
+  .programs {
+    padding: 70px;
+  }
+
+  .programs a {
+    display: block;
+  }
+
+  .programs h1 {
     font-weight: 100;
-   
-   
-}
-.speakers{
+  }
+
+  .speakers {
     flex-direction: column;
     padding: 20px 50px;
-}
-.all2 , .all3{
+  }
+
+  .all2,
+  .all3 {
     display: block;
     display: flex;
     flex-direction: row;
-}
-.all{
+  }
+
+  .all {
     display: flex;
     flex-direction: row;
-}
-.more{
+  }
+
+  .more {
     display: none;
-}
-.partner1{
+  }
+
+  .partner1 {
     display: block;
     padding: 20px;
     height: 200px;
-}
-.partner1 a{
-    margin-left: 30px;
-    padding-bottom: 20px;
-  
-}
+  }
 
-.footer{
+  .footer {
     display: block;
     display: flex;
     flex-direction: row;
     padding: 30px 60px;
-}
-.right p{
+  }
+
+  .right p {
     padding-top: 30px;
     text-align: left;
+  }
 
-}
-.footer-logo{
-    width: 90px;
-    height: 80px;
-}
-.headline-about  h1{
-display: none;
-}
-.headline-about{
+  .headline-about h1 {
+    display: none;
+  }
+
+  .headline-about {
     padding-top: 100px;
-}
-.headline-about h2{
+  }
+
+  .headline-about h2 {
     font-size: 50px;
-}
-#about-description , .email h1 , .email h2{
+  }
+
+  #about-description,
+  .email h1,
+  .email h2 {
     width: 70%;
     margin-right: 15%;
     margin-left: 15%;
-}
-#about-description p , .email p{
+  }
+
+  .email p,
+  #about-description p {
     text-align: center;
     font-size: 15px;
-}
-.email h2{
+  }
+
+  .email h2 {
     font-size: 18px;
     font-weight: 200;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 0px;
-}
-.logo-info h1{
+    margin-top: 0;
+  }
+
+  .logo-info h1 {
     margin-top: 30px;
     font-size: 22px;
-}
-.show{
+  }
+
+  .show {
     display: none;
-}
-.hide{
+  }
+
+  .hide {
     display: block;
-}
-.logo-info{
-    padding-left:15% ;
+  }
+
+  .logo-info {
+    padding-left: 15%;
     padding-right: 15%;
-}
-.logo-img{
+  }
+
+  .logo-img {
     width: 60%;
     margin-left: 20%;
-}
-.history{
+  }
+
+  .history {
     padding: 30px 70px;
-}
-.history-img{
+  }
+
+  .history-img {
     flex-direction: row;
     padding-left: 14%;
     padding-right: 14%;
-}
-.history-img img{
+  }
+
+  .history-img img {
     width: 400px;
-    padding-left: 0px;
-}
-.partner{
+    padding-left: 0;
+  }
+
+  .partner {
     display: none;
-}
-.footer-about{
-    background-color: rgb(63, 56, 56);
-    padding-top: 30px ;
-    padding-left: 170px;
-    height: 200px;
-}
-.footer-about p{
-    color:azure;
-}
-.p2{
+  }
+
+  .p2 {
     display: block;
     padding-top: 5px;
-}
-.footer-info{
+  }
+
+  .footer-info {
     color: aliceblue;
-}
-.footer-logo{
-    width: 50px;
+  }
+
+  .footer-logo {
+    width: 90px;
+    height: 80px;
     padding-right: 10px;
+  }
 }
-}
-    
