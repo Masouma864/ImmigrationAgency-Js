@@ -1,23 +1,27 @@
 {
-  "name": "FirstPortfolio",
+  "name": "portfolio2",
   "version": "1.0.0",
-  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "description": "If you are not familiar with linters, read [root level README](../README.md).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/masouma2020/FirstPortfolio.git"
+    "url": "git+https://github.com/masouma2020/portfolio2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/masouma2020/FirstPortfolio/issues"
+    "url": "https://github.com/masouma2020/portfolio2/issues"
   },
-  "homepage": "https://github.com/masouma2020/FirstPortfolio#readme",
+  "homepage": "https://github.com/masouma2020/portfolio2#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
     "hint": "^7.1.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
