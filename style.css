@@ -737,14 +737,15 @@ nav .menu {
     flex-direction: row;
     padding: 30px 60px;
   }
-  .headline-about h1 {
-    display: none;
-  }
 
   .headline-about {
     padding-top: 100px;
   }
 
+  .headline-about h1 {
+    display: none;
+  }
+  
   .headline-about h2 {
     font-size: 50px;
   }
