@@ -289,7 +289,7 @@ nav .menu {
 .intro h3 {
   font-size: 24px;
   font-weight: 800;
-  font-family: s"Crete Round", serif;
+  font-family: s "Crete Round", serif;
   text-align: left;
   margin-left: 20px;
   margin-bottom: 0;
@@ -727,19 +727,16 @@ nav .menu {
     height: 200px;
   }
 
-  .footer {
-    display: block;
-    display: flex;
-    flex-direction: row;
-    padding: 30px 60px;
-  }
-
-
   .right p {
     font-size: 13px;
     text-align: left;
   }
 
+  .footer {
+    display: block;
+    flex-direction: row;
+    padding: 30px 60px;
+  }
   .headline-about h1 {
     display: none;
   }
