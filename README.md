@@ -2,7 +2,7 @@
 
 # Migration Service Capstone Project
 
-In this Capstone project I built a website for a Preparing Migration Services(https://github.com/masouma2020/Capstone-Project)We provide consultation and representation services to our clients in all their Canadian Immigration, Visa and Citizenship matters.
+In this Capstone project I built a website for a Preparing Migration Services.We provide consultation and representation services to our clients in all their Canadian Immigration, Visa and Citizenship matters.
 ## Built With
 
 - HTML
@@ -55,7 +55,8 @@ Contributions, issues, and feature requests are welcome!
 
 Give a ⭐️ if you like this project!
 
-
+License and Attributions
+This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License
 
 ## Acknowledgements
 
