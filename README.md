@@ -15,9 +15,9 @@ HTML , CSS
 👤 **Author:
             Masouma **
 
-- GitHub: [@masouma2020](https://github.com/githubhandle)
+- GitHub:(https://github.com/Masouma864)
 
-- LinkedIn: [Masouma M](https://linkedin.com/in/linkedinhandle)
+- LinkedIn:(https://linkedin.com/in/masouma-m-9572a41b5)
 
 
 ## 🤝 Contributing
