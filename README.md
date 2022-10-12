@@ -3,7 +3,7 @@
 # Project Name:Capstone-Project
 
 > Description :
-This project is a simple Migration INC which exprot different kinds of visa for people. 
+This project is a simple Migration INC which exports different kinds of visa for people. 
 
 ## Built With
 
