@@ -11,7 +11,7 @@ HTML , CSS , JavaScript
 
 ## live Demo
 
--live:(https://keen-salmiakki-b96e72.netlify.app/)
+[live Demo](https://keen-salmiakki-b96e72.netlify.app/).
 
 
 👤 **Author:
