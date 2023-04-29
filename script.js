@@ -18,75 +18,117 @@ closeBtn.addEventListener("click", () => {
 });
 
 // Dynamically creating speaker cards for the speakers container
-const speakersDetails = [
+const staff = [
   {
-    className: "sp1",
-    name: "lidya",
-    info: " qualified Chartered Professional Accountant",
-    description:"She has cumulated nearly 20 years experiences in Finance and Accounting roles in the Bank, technology and service industries.",
-
-    projImageMobile: "images/lidya.jpg",
-  },
-
-  {
-    className: "sp2",
-    name: "jany",
-    info: " Managing Partner of the firm ",
+    name: 'Trish',
+    title: 'Founder & CEO',
     description:
-      "Jany has been a Vanuatu Resident since 2003 and he is currently the BAKHTAR INC.",
-    projImageMobile: "images/jany.jpg",
+      'Trish is a passionate outdoor enthusiast with over 30 years of experience as a world traveller. Her first overseas trip was a 5 year stint where she worked her way around the world.',
+    image: './images/staff1.jpg',
+    class: 'staff1',
   },
   {
-    className: "sp3",
-    name: "Evan",
-    info: " degree in Law and Political Science (University of Lyon)",
+    name: 'Jorgen',
+    title: 'Manager, North Operations',
     description:
-      "Olivier joins AJC with more than twenty years of experience in corporate and commercial law at Belnet .",
-    projImageMobile: "images/evan.jpg",
+      'Jorgen has been living and guiding in Ecuador for the past 10 years. He was born in Sweden in the town of Kiruna, but decided to swap the Arctic Circle for the Equator almost 20 years ago.',
+    image: './images/staff2.jpg',
+    class: 'staff2',
   },
   {
-    className: "sp4",
-    name: "Ryan",
-    info: "a member of the corporate services team.",
+    name: 'Rolando',
+    title: 'Manager, South America Operations',
     description:
-      "  Ryan is trilingual, he speaks fluently French, Bislama and English.",
-    projImageMobile: "images/ryan.jpg",
+      'Rolando (“Rolo”) lives for the outdoors and adventure. Also a recognized conservationist, Rolando provides our travellers with an unmatched level of connectivity to the real Panama.',
+    image: './images/staff3.jpg',
+    class: 'staff3',
   },
   {
-    className: "sp5",
-    name: "Julia",
-    info: " Executive secretary since October 2006 for BAKHTAR",
+    name: 'Meghan',
+    title: 'Operations Director',
     description:
-      "  Julia Paule takes care of the following services : Follow up with lands records; Immigration services ; Work permits; Business Licence applications.",
-    projImageMobile: "images/julia.jpg",
+      'Meghan has been working at BikeHike Adventures as the Director of Operations for the past 15 years. Her passion for travel was passed on to her by her parents.',
+    image: './images/staff4.jpg',
+    class: 'staff4',
   },
   {
-    className: "sp6",
-    name: "Roberto",
-    info: " university and technological degree in marketing techniques.",
+    name: 'Miguel',
+    title: 'Liason, Spain',
     description:
-      " In France, he worked as a consultant in web marketing, social media and web communication. He moved to Vanuatu in september 2019 ",
-    projImageMobile: "images/roberto.jpg",
+      'Miguel was born in the beautiful Andean city of Cusco where he learned to speak Quechua at the age of three. He now also speaks English and Spanish fluently.',
+    image: './images/staff5.jpg',
+    class: 'staff5',
+  },
+  {
+    name: 'Saaid',
+    title: 'Manager, East Operations',
+    description:
+      'Saaid comes from the village of Tagleft, in the Central High Atlas Mountains. He  has established a niche as a mountain biking and road cycling guide and has a superb knowledge of the back roads of Morocco. ',
+    image: './images/staff6.jpg',
+    class: 'staff6',
   },
 ];
 
-const speakerSection = document.getElementById("speakerContainer");
-const speakCont = document.getElementById("speakers-container");
+const StaffSection = document.querySelector('.all-staff-members');
 
-Array.from(speakCont.children).forEach((child, index) => {
-  child.innerHTML = `<div class="${speakersDetails[index].className}">
-    <div>
-      <img src="${speakersDetails[index].projImageMobile}" alt="" class="speaker-img" />
-    </div>
-    <div class="descript">
-      <h4>${speakersDetails[index].name}</h4>
-      <p class="first">
-      ${speakersDetails[index].info}
-      </p>
-      <p class="second">
-      ${speakersDetails[index].description}
-      </p>
-    </div>
-  </div>
-  `;
+function createStaffMember(allowStaff) {
+  let i = 0;
+  staff.every((member) => {
+    if (i > allowStaff) {
+      return false;
+    }
+    const staffer = document.createElement('article');
+    staffer.innerHTML += `
+      <div class='staff__img'>
+      <img src='${member.image}' alt=''>
+      </div>
+      <div class='staff__description'>
+        <h3>${member.name}</h3>
+        <h4>${member.title}</h4>
+        <hr>
+        <p>${member.description}</p>
+      </div>
+    `;
+    staffer.classList.add(member.class);
+    staffer.classList.add('staff');
+    StaffSection.appendChild(staffer);
+    i += 1;
+    return true;
+  });
+}
+
+const staffInside = document.querySelector('.staff-inside');
+let isDisplayingCards = false;
+staffInside.addEventListener('click', () => {
+  if (isDisplayingCards) {
+    StaffSection.innerHTML = '';
+    createStaffMember(1);
+    staffInside.querySelector('#more-btn').innerHTML = 'SEE MORE';
+    staffInside.querySelector('#more-btn-ico').classList.add('fa-chevron-down');
+    staffInside.querySelector('#more-btn-ico').classList.remove('fa-chevron-up');
+    isDisplayingCards = !isDisplayingCards;
+  } else {
+    StaffSection.innerHTML = '';
+    createStaffMember(staff.length);
+    staffInside.querySelector('#more-btn').innerHTML = 'SEE LESS';
+    staffInside.querySelector('#more-btn-ico').classList.remove('fa-chevron-down');
+    staffInside.querySelector('#more-btn-ico').classList.add('fa-chevron-up');
+    isDisplayingCards = !isDisplayingCards;
+  }
+});
+
+function loadCards() {
+  StaffSection.innerHTML = '';
+  if (window.innerWidth < 768) {
+    createStaffMember(1);
+  } else {
+    createStaffMember(staff.length);
+    document.querySelector('.staff-inside').classList.toggle('active');
+  }
+}
+
+loadCards();
+
+window.addEventListener('resize', () => {
+  staffInside.dispatchEvent(new Event('click'));
 });
