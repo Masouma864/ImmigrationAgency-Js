@@ -1,5 +1,5 @@
 
-# Project Name:Capstone-Project
+# Project Name:ImmigrationAgency-Js
 
 > Description :
 Module One Capstone Project. The Immigration-Agencies is a Website for Immigration. In this project, the featured section is implemented dynamically with JavaScript. This project is built with the following technologies: HTML5, CSS, and JavaScript.. 
