@@ -13,19 +13,15 @@ Module One Capstone Project. The Immigration-Agencies is a Website for Immigrati
 
 ## live Demo
 
-- [live Demo](https://keen-salmiakki-b96e72.netlify.app/).
-
-
-- [Video link](https://www.loom.com/share/3ac3a1c847cb4603bbf44db8795aa2ef))
-
+- [live Demo](https://immigration-agency.vercel.app/).
 
    ## Authors
 
 👤 **Author**
 Masouma Modarresi
 
-- GitHub: [@masouma2020](https://github.com/masouma2020/Capstone-Project)
-- LinkedIn: [Masouma Modarresi](https://www.linkedin.com/in/masouma-modarresi/)
+- GitHub: [masouma](https://github.com/masouma2020/Capstone-Project)
+- LinkedIn: [Masouma](https://www.linkedin.com/in/masouma-modarresi/)
 
 
 **To get a local copy up and running follow these simple example steps.**
@@ -42,7 +38,7 @@ You also need an editor like VS Code or Sublime to edit project files
 2. Navigate to the directory where you would like to run this project from, preferably from your web server directory
 3. Type the following command
 
-> git clone @ (https://github.com/masouma2020/Capstone-Project.git)
+> git clone (https://github.com/Masouma864/ImmigrationAgency-Js.git)
 
 ### Usage
 
