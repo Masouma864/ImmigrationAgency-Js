@@ -1,22 +1,32 @@
 
+# Project Name:Capstone-Project
 
-# Migration Service Capstone Project
+> Description :
+Module One Capstone Project. The Immigration-Agencies is a Website for Immigration. In this project, the featured section is implemented dynamically with JavaScript. This project is built with the following technologies: HTML5, CSS, and JavaScript.. 
 
-In this Capstone project I built a website for a Preparing Migration Services.We provide consultation and representation services to our clients in all their Canadian Immigration, Visa and Citizenship matters.
-## Built With
+## Tech
 
 - HTML
 - CSS
 - Javascript
 
 
-## Live Demo
+## live Demo
+
+- [live Demo](https://keen-salmiakki-b96e72.netlify.app/).
+
 
 - [Video link](https://www.loom.com/share/3ac3a1c847cb4603bbf44db8795aa2ef))
 
-My site is live at https://masouma2020.github.io/Capstone-Project/
 
-## Getting Started
+   ## Authors
+
+👤 **Author**
+Masouma Modarresi
+
+- GitHub: [@masouma2020](https://github.com/masouma2020/Capstone-Project)
+- LinkedIn: [Masouma Modarresi](https://www.linkedin.com/in/masouma-modarresi/)
+
 
 **To get a local copy up and running follow these simple example steps.**
 
@@ -38,14 +48,6 @@ You also need an editor like VS Code or Sublime to edit project files
 
 Once the project folder is downloaded to your computer, double click on the _index.html_ file to run the project in the browser.
 
-## Authors
-
-👤 **Author**
-Masouma Modarresi
-
-
-- GitHub: [@masouma2020](https://github.com/masouma2020/Capstone-Project)
-- LinkedIn: [Masouma Modarresi](https://www.linkedin.com/in/masouma-m-9572a41b5/)
 
 ## 🤝 Contributing
 
