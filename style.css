@@ -32,7 +32,7 @@ header {
 }
 
 nav .menu {
-  width: 65px;
+  width: 52px;
   height: 75px;
   cursor: pointer;
 }
@@ -110,7 +110,7 @@ ul {
 .partner1-img {
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 40px;
+  margin: 40px;
 }
 
 .partner a,
