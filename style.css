@@ -13,7 +13,6 @@
   --fontFamily-lato: "Lato", sans-serif;
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -23,8 +22,9 @@ header {
   top: 0;
   background-color: white;
   width: 100%;
+  border-bottom: 1px solid;
   box-sizing: border-box;
-  height: 62px;
+  height: 92px;
 }
 
 #mobile-menu {
@@ -32,9 +32,8 @@ header {
 }
 
 nav .menu {
-  width: 45px;
-  height: 45px;
-  margin-left: 6px;
+  width: 65px;
+  height: 75px;
   cursor: pointer;
 }
 
@@ -54,7 +53,6 @@ nav .menu {
   border: 2px solid red;
   padding: 5px;
   margin-bottom: 4px;
-
 }
 
 .mobile-menu {
@@ -63,10 +61,11 @@ nav .menu {
   z-index: 1;
   left: 0;
   top: 0;
-  width: 50%;
-  height: 84%;
-  overflow: auto;
-  background-color: #e7e7e7;
+  width: 100%;
+  height: 100%;
+  padding: 5.625rem 0.9375rem;
+  background: #313131;
+  color: #fff;
 }
 
 .menu-content {
@@ -77,11 +76,18 @@ nav .menu {
 }
 
 .close {
-  color: #867068;
   float: left;
-  font-size: 26px;
+  font-size: 38px;
   font-weight: bold;
   cursor: pointer;
+}
+
+ul {
+  display: block;
+  margin: 45px 0 60px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
 
 .menu-content ul {
@@ -91,7 +97,6 @@ nav .menu {
 .menu-content ul li {
   list-style-type: none;
   padding: 15px;
-  border-bottom: 1px solid #6f6c6b;
 }
 
 .partner-img ul li {
@@ -102,13 +107,18 @@ nav .menu {
   align-items: center;
 }
 
+.partner1-img {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
 .partner a,
 .partner1 a {
   padding: 5px 30px;
   font-size: 24px;
   color: rgb(204, 204, 195);
   text-align: center;
-  font-weight: bold;
   align-items: center;
   text-decoration: none;
 }
@@ -131,20 +141,34 @@ nav .menu {
   font-weight: normal;
 }
 
-
-
-.menu-content ul li a {
-  color: #fff5e1;
-  font-size: 17px;
-  font-weight: 500;
+.staff-inside a {
   text-decoration: none;
+  color: var(--Black);
 }
 
-.desk-logo {
-  display: none;
-  width: 180px;
-  height: 50px;
-  padding-left: 30px;
+.menu-content ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.2;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 1;
+  margin-left: 0;
+  height: 70px;
+}
+
+.logo-img {
+  margin-right: 20px;
 }
 
 .partner-img h1 {
@@ -160,11 +184,11 @@ nav .menu {
 }
 
 .headline-section {
-  background-image: url(images/background.jpg);
+  background-image: url(images/background.webp);
   background-blend-mode: lighten;
   width: 100%;
   height: 100vh;
-  padding-top: 40px;
+  padding-top: 120px;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.6);
@@ -172,14 +196,18 @@ nav .menu {
 
 .headline-section h2 {
   color: var(--Black);
-  padding: 10px 0 10px 0;
   margin-left: 30px;
-  margin-bottom: 15px;
-  margin-top: -20px;
-  font-weight: 800px;
-  text-align: left;
-  font-size: var(--fontSize-h1);
+  font-size: 2.2rem;
+  background-image: url(./images/bg.jpg);
   font-family: var(--fontFamily-coco);
+  background-clip: unset;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+.footer-logo {
+  margin: 15px;
 }
 
 .headline-section h1 {
@@ -248,14 +276,9 @@ nav .menu {
   justify-content: center;
 }
 
-.staff-inside a {
-  text-decoration: none;
-  color: var(--Black);
-}
-
 #staff {
   align-content: center;
-  margin: 10% 0 4%;
+  margin: 5% 0 4%;
 }
 
 .fas {
@@ -279,13 +302,11 @@ nav .menu {
   font-family: "Poppins", sans-serif;
 }
 
-
 #about-description {
   border: 3px solid white;
   margin: 0;
   padding: 8px;
   background-color: rgba(255, 255, 255, 0.5);
-
 }
 
 #description {
@@ -294,20 +315,15 @@ nav .menu {
   padding: 8px;
 }
 
-.logo-info h1 {
-  color: rgb(70, 56, 56);
-  font-size: 16px;
-  margin: 0 60px;
-  font-family: sans-serif;
-  padding: 20px;
-  text-align: center;
+.about {
+  margin-top: 70px;
 }
 
-.logo-info p {
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-  color: black;
-  text-align: center;
+.logo-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
@@ -339,41 +355,26 @@ nav .menu {
   padding: 10px;
 }
 
-
-
 .descript p {
   text-align: left;
   margin: 0;
 }
 
-.intro p {
-  text-align: left;
-  margin-left: 0;
-  font-family: "Poppins", sans-serif;
-  margin-right: 0;
+.card1 p,
+.card2 p {
+  text-align: center;
+  color: var(--White);
+  margin: 0;
 }
 
 #description p,
 #about-description p {
-  font-size: 14px;
   margin: 0 2px;
-  line-height: 24px;
   text-align: left;
   font-family: "Poppins", sans-serif;
   color: rgb(41, 38, 38);
-}
-
-.intro h3 {
-  font-size: 24px;
-  font-weight: 800;
-  font-family: s "Crete Round", serif;
-  text-align: left;
-  margin-left: 20px;
-  margin-bottom: 0;
-}
-
-.intro {
-  margin-bottom: 40px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .programs {
@@ -412,11 +413,9 @@ nav .menu {
   padding: 1% 7%;
   gap: 27px;
   margin-bottom: 10px;
-
 }
 
 .main-sec {
-
   height: 80px;
   width: 80%;
   margin-left: 2rem;
@@ -451,7 +450,6 @@ nav .menu {
 }
 
 .main-title {
-
   color: var(--Orange);
   text-align: center;
   min-width: 83px;
@@ -471,17 +469,7 @@ nav .menu {
   font-family: "Crete Round", serif;
 }
 
-
-
-.logo {
-  width: 60px;
-  align-items: left;
-  padding-right: 15px;
-  padding-top: 10px;
-}
-
 .partner1 {
-  display: none;
   text-align: center;
 }
 
@@ -500,13 +488,6 @@ nav .menu {
   background: rgba(177, 19, 19, 0.6);
   margin-bottom: 30px;
   transition: background-color 1s;
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px;
 }
 
 .card1:hover,
@@ -541,14 +522,6 @@ ul {
   color: var(--White);
   font-family: var(--fontFamily-lato);
 }
-
-.card1 p,
-.card2 p {
-  text-align: center;
-  color: var(--White);
-  margin: 0;
-}
-
 
 .footer {
   display: flex;
@@ -622,27 +595,6 @@ ul {
   display: none;
 }
 
-.footer-logo {
-  width: 60px;
-  height: 50px;
-  margin: 15px;
-}
-
-.logo-info {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  border-bottom: 2px solid gray;
-  padding-bottom: 30px;
-}
-
-.logo-img {
-  margin: 0 50px;
-  border: 1px solid gray;
-  padding: 10px;
-  height: 200px;
-}
-
 .p2 {
   display: none;
 }
@@ -652,8 +604,6 @@ ul {
   flex-direction: column;
   justify-content: space-between;
 }
-
-
 
 .history h1 {
   color: black;
@@ -673,9 +623,15 @@ ul {
   height: 240px;
 }
 
-.partner h1,
+.partner h1 {
+  text-align: center;
+  padding: 10px;
+  color: rgb(128, 132, 134);
+}
+
 .partner1 h1 {
   text-align: center;
+  padding: 30px;
   color: rgb(128, 132, 134);
 }
 
@@ -696,7 +652,6 @@ ul {
   flex-direction: row;
   align-items: center;
   padding-right: 30px;
-
 }
 
 .footer-about {
@@ -714,18 +669,6 @@ ul {
 @media screen and (min-width: 760px) {
   .menu {
     display: none;
-  }
-
-  .all-staff-members {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .staff {
-    display: flex;
-    padding: 0;
-    width: 50%;
-    margin-top: 22px;
   }
 
   .all-staff-members {
@@ -797,12 +740,8 @@ ul {
     padding: 2px;
   }
 
-  .desk-logo {
-    display: block;
-  }
-
   .headline-section {
-    padding: 120px 120px 60px 90px;
+    padding: 100px 120px 0 70px;
   }
 
   .headline-section h1 {
@@ -812,18 +751,17 @@ ul {
 
   .headline-section h2 {
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   #description {
-    width: 70%;
+    width: 90%;
   }
 
   .main-program {
     display: flex;
     flex-direction: row;
     gap: 10px;
-
   }
 
   .main-div {
@@ -857,19 +795,12 @@ ul {
     display: block;
   }
 
-  .programs h1 {
-    font-weight: 100;
-  }
-
-
-
   .all2,
   .all3 {
     display: block;
     display: flex;
     flex-direction: row;
   }
-
 
   .all {
     display: flex;
@@ -909,7 +840,6 @@ ul {
     font-size: 50px;
   }
 
-
   #about-description,
   .email h1,
   .email h2 {
@@ -931,12 +861,6 @@ ul {
     margin-top: 0;
   }
 
-  .logo-info h1 {
-    margin-top: 30px;
-    font-size: 22px;
-  }
-
-
   .show {
     display: none;
   }
@@ -945,38 +869,13 @@ ul {
     display: block;
   }
 
-  .logo-info {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-
-  .logo-img {
-    width: 60%;
-    margin-left: 20%;
-  }
-
   .history-img {
     display: flex;
     flex-direction: row;
     padding: 30px 70px;
   }
 
-
-  .partner {
-    display: none;
-  }
-
   .p2 {
     display: block;
-
   }
-
-
-
-  .footer-logo {
-    width: 90px;
-    height: 80px;
-    margin-right: 5px;
-  }
-
 }

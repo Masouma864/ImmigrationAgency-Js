@@ -1,20 +1,20 @@
-const hamburgerBtn = document.querySelector(".menu");
-const toggleMenu = document.querySelector("#menu");
-const menuList = document.querySelectorAll(".menuItem");
-const closeBtn = document.querySelector(".close");
+const hamburgerBtn = document.querySelector('.menu');
+const toggleMenu = document.querySelector('#menu');
+const menuList = document.querySelectorAll('.menuItem');
+const closeBtn = document.querySelector('.close');
 
-hamburgerBtn.addEventListener("click", () => {
-  toggleMenu.style.display = "block";
+hamburgerBtn.addEventListener('click', () => {
+  toggleMenu.style.display = 'block';
 });
 
 menuList.forEach((item) => {
-  item.addEventListener("click", () => {
-    toggleMenu.style.display = "none";
+  item.addEventListener('click', () => {
+    toggleMenu.style.display = 'none';
   });
 });
 
-closeBtn.addEventListener("click", () => {
-  toggleMenu.style.display = "none";
+closeBtn.addEventListener('click', () => {
+  toggleMenu.style.display = 'none';
 });
 
 // Dynamically creating speaker cards for the speakers container
